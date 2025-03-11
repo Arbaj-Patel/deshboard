@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #d4bdde;
+    min-height: 100vh;
+}
+h3{
+    color: #a612e6;
+    text-align: center;
+    height:4rem;
+    line-height: 4rem;
+    font-size: 30px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    margin-left:10px;
+}
+canvas{
+    cursor: pointer;
+    color: white;
+}
+.chart{
+    padding: 2rem;
+    border: 1px solid #a612e6;
+    border-radius: 1rem;
+    background: #1a1620e2;
+}
+.pieChart{
+    display:block;
+}
