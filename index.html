@@ -1,27 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+          <span class="material-icons-outlined">search</span>
+        </div>
+        <div class="header-right">
+          <span class="material-icons-outlined">notifications</span>
+          <span class="material-icons-outlined">email</span>
+          <span class="material-icons-outlined">account_circle</span>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <span class="material-icons-outlined">data_object</span> CODERS
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()"
+            >close</span
+          >
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item active">
+            <a href="#">
+              <span class="material-icons-outlined">dashboard</span> Dashboard
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#">
+              <span class="material-icons-outlined">library_books</span> Courses
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#">
+              <span class="material-icons-outlined">visibility</span> Analytics
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#">
+              <span class="material-icons-outlined">groups</span> Students
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#">
+              <span class="material-icons-outlined">fact_check</span> Details
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#">
+              <span class="material-icons-outlined">poll</span> Reports
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#">
+              <span class="material-icons-outlined">settings</span> Settings
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+      <main class="main-container">
+        <div class="main-title">
+          <h2>DASHBOARD</h2>
+          <div class="date-filter">
+            <label for="year-filter">Select Year:</label>
+            <select id="year-filter">
+              <option value="2023">2023</option>
+              <option value="2024" selected>2024</option>
+              <option value="2025">2025</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="main-cards">
+          <div class="card">
+            <div class="card-inner">
+              <h3>COURSES</h3>
+              <span class="material-icons-outlined">library_books</span>
+            </div>
+            <h1>20+</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>Yearly viewers</h3>
+              <span class="material-icons-outlined">visibility</span>
+            </div>
+            <h1>200k</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>STUDENTS</h3>
+              <span class="material-icons-outlined">school</span>
+            </div>
+            <h1>21500</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>REVENUE</h3>
+              <span class="material-icons-outlined">payments</span>
+            </div>
+            <h1>₹45L</h1>
+          </div>
+        </div>
+
+        <div class="charts-row">
+          <div class="charts-card">
+            <h2 class="chart-title">Website Top 6 Courses</h2>
+            <canvas id="bar-chart" height="350" width="100"></canvas>
+          </div>
+
+          <div class="charts-card">
+            <h2 class="chart-title">Trending Languages In Market</h2>
+            <canvas id="pie-chart"></canvas>
+          </div>
+        </div>
+
+        <div class="charts-row">
+          <div class="charts-card">
+            <h2 class="chart-title">Yearly Viewership</h2>
+            <canvas id="viewership-chart" height="100%" width="100"></canvas>
+          </div>
+
+          <div class="charts-card">
+            <h2 class="chart-title">Monthly Engagement</h2>
+            <canvas id="engagement-chart"></canvas>
+          </div>
+        </div>
+
+        <div class="charts-row">
+          <div class="charts-card">
+            <h2 class="chart-title">Course Completion Rate</h2>
+            <div class="gauge-container">
+              <canvas id="completion-gauge"></canvas>
+              <div id="gauge-value">75%</div>
+            </div>
+          </div>
+
+          <div class="charts-card">
+            <h2 class="chart-title">Course Ratings</h2>
+            <div class="ratings-container">
+              <div class="rating-row">
+                <div class="rating-label">5 ★</div>
+                <div class="rating-bar">
+                  <div class="rating-fill rating-fill-75"></div>
+                </div>
+                <div class="rating-count">750</div>
+              </div>
+              <div class="rating-row">
+                <div class="rating-label">4 ★</div>
+                <div class="rating-bar">
+                  <div class="rating-fill rating-fill-60"></div>
+                </div>
+                <div class="rating-count">600</div>
+              </div>
+              <div class="rating-row">
+                <div class="rating-label">3 ★</div>
+                <div class="rating-bar">
+                  <div class="rating-fill rating-fill-35"></div>
+                </div>
+                <div class="rating-count">350</div>
+              </div>
+              <div class="rating-row">
+                <div class="rating-label">2 ★</div>
+                <div class="rating-bar">
+                  <div class="rating-fill rating-fill-20"></div>
+                </div>
+                <div class="rating-count">200</div>
+              </div>
+              <div class="rating-row">
+                <div class="rating-label">1 ★</div>
+                <div class="rating-bar">
+                  <div class="rating-fill rating-fill-10"></div>
+                </div>
+                <div class="rating-count">100</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="charts-row">
+          <div class="charts-card">
+            <h2 class="chart-title">Yearly Revenue</h2>
+            <canvas id="revenue-chart" height="100%" width="100"></canvas>
+          </div>
+
+          <div class="charts-card">
+            <h2 class="chart-title">Top Referring Sources</h2>
+            <canvas id="sources-chart" height="100%" width="100"></canvas>
+          </div>
+        </div>
+      </main>
+      <!-- End Main -->
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
-    <title>Desktop Chart</title>
-</head>
-<body>
-    
-<h3>DashBord OF Courses</h3>
-
-<div class="container">
-    <div class="barChart   chart">
-          <canvas id="barChart" width="560vw" height="400vh"></canvas>
-    </div>
-    <div class="pieChart  chart">
-        <canvas id="pieChart" width="500vw" height="400vh"></canvas>
-    </div>
-</div>
-
-<script src="barChart.js"></script>
-<script src="paiChart.js"></script>
-</body>
+    <script src="app.js"></script>
+     
+  </body>
 </html>
