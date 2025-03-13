@@ -220,6 +220,7 @@ body {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
   overflow: hidden; /* Prevent overflow */
+  margin-bottom: 20px;
 }
 
 .charts-card:hover {
@@ -319,11 +320,13 @@ canvas {
       "header"
       "main";
   }
-
+  .header-left{
+    display: none;
+  }
   #sidebar {
     display: none;
   }
-
+  
   .menu-icon {
     display: inline;
   }
@@ -351,10 +354,6 @@ canvas {
 }
 
 @media screen and (max-width: 576px) {
-  .header-left {
-    display: none;
-  }
-
   .main-cards {
     grid-template-columns: 1fr;
   }
