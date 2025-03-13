@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+          <span class="material-icons-outlined">data_object</span>
+        </div>
+        <div class="header-right">
+          <span class="material-icons-outlined">notifications</span>
+          <span class="material-icons-outlined">email</span>
+          <span class="material-icons-outlined">account_circle</span>
+        </div>
+      </header>
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <span class="material-icons-outlined">data_object</span> CODERS
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()"
+            >close</span
+          >
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a href="../index.html">
+              <span class="material-icons-outlined">dashboard</span> Dashboard
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="courses.html">
+              <span class="material-icons-outlined">library_books</span> Courses
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="students.html">
+              <span class="material-icons-outlined">groups</span> Students
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="analytics.html">
+              <span class="material-icons-outlined">visibility</span> Analytics
+            </a>
+          </li>
+          <li class="sidebar-list-item active">
+            <a href="settings.html">
+              <span class="material-icons-outlined">settings</span> Settings
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-container">
+        <div class="main-title">
+          <h2>SETTINGS</h2>
+        </div>
+
+        <!-- Settings Content -->
+        <div class="main-cards">
+          <div class="card">
+            <div class="card-inner">
+              <h3>General Settings</h3>
+              <span class="material-icons-outlined">settings</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>Notifications</h3>
+              <span class="material-icons-outlined">notifications</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>Security</h3>
+              <span class="material-icons-outlined">lock</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>Appearance</h3>
+              <span class="material-icons-outlined">palette</span>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
