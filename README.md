@@ -1,3 +1,6 @@
+
+Source Link: https://github.com/Arbaj-Patel/deshboard.git 
+
 <pre>
                     Interactive Dashboard Project Report 
 
@@ -12,11 +15,8 @@ Shital Chaudhari                            chaudharishital817@gmail.com
 Santhi Choppa                               shanthichoppa@gmail.com
 Vaibhav Sambhaji Savant                     savantvaibhav76@gmail.com
 
-Links 
 
-Source Link: https://github.com/Arbaj-Patel/deshboard.git
-  
-  Live Link:  
+    
   
   Introduction
    
