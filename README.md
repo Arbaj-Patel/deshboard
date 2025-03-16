@@ -14,7 +14,7 @@ Vaibhav Sambhaji Savant                     savantvaibhav76@gmail.com
 
 Links 
 
-Source Link: https://github.com/Arbaj-Patel/deshboard.git 
+Source Link: https://github.com/Arbaj-Patel/deshboard.git
   
   Live Link:  
   
