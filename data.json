@@ -1,97 +1,155 @@
 {
     "dashboard": {
-        "cards": {
-            "courses": 24,
-            "viewers": 235000,
-            "students": 5000,
-            "revenue": 4523000
-        },
-        "courses": {
-            "labels": [
-                "C",
-                "JAVA",
-                "PYTHON",
-                "JS",
-                "C++",
-                "GoLang"
-            ],
-            "enrollments": [
-                3018,
-                2560,
-                1698,
-                5014,
-                3549,
-                3884
-            ],
-            "popularity": [
-                5855,
-                2569,
-                2910,
-                5616,
-                4109,
-                3359
-            ],
-            "completion_rate": 73,
-            "ratings": {
-                "5": 675,
-                "4": 739,
-                "3": 342,
-                "2": 229,
-                "1": 286
-            }
-        },
-        "analytics": {
-            "viewership": [
-                22266,
-                25381,
-                20682,
-                31699,
-                21055,
-                23569,
-                21158,
-                17403,
-                17508,
-                19889,
-                16965,
-                18957
-            ],
-            "engagement": [
-                9920,
-                28828,
-                37175,
-                30450,
-                41506
-            ],
-            "revenue": [
-                473579,
-                423486,
-                559520,
-                547870,
-                391634,
-                735158,
-                391465,
-                678525,
-                400562,
-                836701,
-                513125,
-                516557
-            ],
-            "sources": [
-                "Google",
-                "YouTube",
-                "Social Media",
-                "Direct",
-                "Referrals",
-                "Others"
-            ],
-            "source_users": [
-                15136,
-                34927,
-                21375,
-                18829,
-                32054,
-                38160
-            ]
+      "cards": {
+        "courses": 20,
+        "viewers": 200000,
+        "students": 10000,
+        "revenue": 2500000
+      },
+      "courses": {
+        "labels": [
+          "C",
+          "JAVA",
+          "PYTHON",
+          "JS",
+          "C++",
+          "GoLang"
+        ],
+        "enrollments": [
+          5000,
+          2560,
+          6698,
+          4014,
+          3549,
+          3884
+        ],
+        "popularity": [
+          5855,
+          2569,
+          6910,
+          3616,
+          4109,
+          3359
+        ],
+        "completion_rate": 73,
+        "ratings": {
+          "5": 675,
+          "4": 739,
+          "3": 342,
+          "2": 229,
+          "1": 286
         }
+      },
+      "analytics": {
+        "viewership": [
+          22266,
+          25381,
+          20682,
+          31699,
+          21055,
+          23569,
+          21158,
+          17403,
+          17508,
+          19889,
+          16965,
+          18957
+        ],
+        "engagement": [
+          9920,
+          28828,
+          37175,
+          30450,
+          41506
+        ],
+        "revenue": [
+          473579,
+          423486,
+          559520,
+          547870,
+          391634,
+          735158,
+          391465,
+          678525,
+          400562,
+          836701,
+          513125,
+          516557
+        ],
+        "sources": [
+          "Google",
+          "YouTube",
+          "Social Media",
+          "Direct",
+          "Referrals",
+          "Others"
+        ],
+        "source_users": [
+          15136,
+          34927,
+          21375,
+          18829,
+          32054,
+          38160
+        ]
+      }
+    },
+    "analytics": {
+      "monthlyTraffic": 235000,
+      "activeUsers": 10000,
+      "bounceRate": 25,
+      "sessionDuration": 330,
+      "traffic": [
+        1000,
+        1200,
+        1300,
+        1400,
+        1500,
+        1600
+      ],
+      "demographics": [
+        40,
+        35,
+        15,
+        10
+      ]
+    },
+    "courses": {
+      "totalCourses": 30,
+      "activeCourses": 10,
+      "upcomingCourses": 10,
+      "enrollment": [
+        1000,
+        800,
+        900,
+        700,
+        300,
+        200
+      ],
+      "completion": [
+        60,
+        30,
+        10
+      ]
+    },
+    "students": {
+      "totalStudents": 5000,
+      "activeStudents": 3500,
+      "newStudents": 250,
+      "studentEngagement": 85,
+      "region": [
+        500,
+        300,
+        400,
+        200
+      ],
+      "engagement": [
+        65,
+        59,
+        80,
+        81,
+        56,
+        55
+      ]
     }
-}
+  }
