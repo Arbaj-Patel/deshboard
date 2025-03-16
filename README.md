@@ -53,12 +53,12 @@ Vaibhav Sambhaji Savant                     savantvaibhav76@gmail.com
   Implementation Details 
   1. HTML Structure 
    html 
-   <div class="dashboard">  
-            <div class="cards" id="cards"></div>  
-                        <canvas id="chart"></canvas>  
-                        <table id="table"></table>  
-   </div>  
-
+    &lt;div class="dashboard"&gt;  
+            &lt;div class="cards" id="cards"&gt;&lt;/div&gt;  
+                        &lt;canvas id="chart"&gt;&lt;/canvas&gt;  
+                        &lt;table id="table"&gt;&lt;/table&gt; 
+    &lt;/div&gt; 
+  
  2.JSON Data Example 
   {   
   "sales": [  
