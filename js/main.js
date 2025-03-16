@@ -41,7 +41,7 @@ function updateMainCards(cardsData) {
 
   // Update dashboard cards if on dashboard page
   if (
-    window.location.pathname.includes("index.html") ||
+    window.location.pathname.includes("../index.html") ||
     window.location.pathname === "/" ||
     window.location.pathname.endsWith("/")
   ) {
