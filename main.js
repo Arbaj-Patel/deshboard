@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", async () => {
   try {
     // Load JSON data
-    const response = await fetch("../data.json")
+    const response = await fetch("data.json")
     const data = await response.json()
     const dashboard = data.dashboard
 

@@ -1,7 +1,7 @@
 {
     "dashboard": {
       "cards": {
-        "courses": 20,
+        "courses": 24,
         "viewers": 200000,
         "students": 10000,
         "revenue": 2500000
